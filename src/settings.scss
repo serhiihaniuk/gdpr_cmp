@@ -10,6 +10,7 @@
 /* ## Settings to configure applications view */
 /* Main cmp settings */
 .cmp {
+	/* base cmp settings */
 	--base_width: 600px;
 	--base_height: 500px;
 	--base_padding: 25px;
@@ -25,20 +26,17 @@
 	--main_font_weight: 400;
 	--bold_font_weight: 700;
 	--popup_border_radius: 4px;
-}
-/* main section */
-.cmp {
+
+	/* main section */
 	--main_content_padding: 10px var(--base_padding);
-}
-/* header */
-.cmp {
+
+	/* header */
 	--header_height: 65px;
 	--header_padding: 15px var(--base_padding);
 	--header_shadow: 0px 3px 5px #01010136;
 	--logo-image-url: url("data:image/svg+xml;utf8,<svg width='72' height='32' viewBox='0 0 72 32' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M72 0H0V32H72V0Z' fill='rgb(226,0,0)'/><path d='M43.9936 21.5333V25.1691C43.2323 25.5073 42.2807 25.6976 41.2656 25.6976C37.6283 25.6976 34.4774 22.9073 34.4774 19.0602C34.4774 15.1919 37.6495 12.4016 41.2656 12.4016C42.2807 12.4016 43.2112 12.5919 43.9936 12.9512V16.5659C43.2746 16.1008 42.5767 15.7838 41.4982 15.7838C39.743 15.7838 38.157 17.0943 38.157 19.1025C38.157 21.0683 39.743 22.3789 41.4982 22.3789C42.5979 22.3155 43.2746 22.0195 43.9936 21.5333Z' fill='white'/><path d='M49.7668 6.60977V18.1512L54.0596 12.6764H58.564L53.679 18.5951L58.7543 25.3805H54.2288L49.7879 19.187V25.3805H45.9391V6.60977H49.7668Z' fill='white'/><path d='M27.0971 21.7658C26.1666 21.9984 25.1304 21.6602 25.1304 19.9268C25.1304 16.6715 25.1304 6.58861 25.1304 6.58861V6.56747H21.2816C21.2816 6.56747 21.2816 16.2276 21.2816 19.8423C21.2816 23.4146 22.9311 25.6553 27.1182 25.3805V21.7658H27.0971Z' fill='white'/><path d='M16.4178 15.8472C17.6866 15.2553 18.7651 13.987 18.7651 12.1691C18.7651 9.25205 16.6292 7.34961 12.5267 7.34961H6.6478V25.3805H13.4149C17.4328 25.3805 19.8647 23.3512 19.8647 20.2016C19.8647 18.0455 18.3844 16.439 16.4178 15.8472ZM10.6235 10.626H12.3575C13.9436 10.626 14.9586 11.3659 14.9586 12.7399C14.9586 14.0927 13.9436 14.8325 12.3575 14.8325H10.6235V10.626ZM13.1611 22.1041H10.6235V17.7496H13.1611C14.8106 17.7496 15.8468 18.6374 15.8468 19.9268C15.8679 21.2374 14.8106 22.1041 13.1611 22.1041Z' fill='white'/><path d='M32.9548 12.6553H29.106V25.3805H32.9548V12.6553Z' fill='white'/><path d='M31.0093 10.8374H31.0516C32.2993 10.8374 33.3355 9.84391 33.3355 8.57562C33.3355 7.28619 32.2993 6.29269 31.0516 6.29269H31.0093C29.7404 6.29269 28.7254 7.28619 28.7254 8.57562C28.7254 9.86505 29.7404 10.8374 31.0093 10.8374Z' fill='white'/><path d='M65.3583 3.50244H64.3583V29.2276H65.3583V3.50244Z' fill='white'/></svg>");
-}
-/* titles */
-.cmp {
+
+	/* titles */
 	--title_font_family: var(--main_font_family);
 	--main_title_font_size: 24px;
 	--primary_title_font_size: 18px;
@@ -46,9 +44,8 @@
 	--main_title_margin: 10px 0;
 	--primary_title_margin: 10px 0;
 	--secondary_title_margin: 10px 0;
-}
-/* text paragraph */
-.cmp {
+
+	/* text paragraph */
 	--text_block_margin: 10px 0;
 	--text_block_font_size: var(--main_font_size);
 	--text_block_font_family: var(--main_font_family);
@@ -56,24 +53,23 @@
 	--text_block_font_color: var(--main_font_color);
 	--text_block_line_height: 1.5;
 	--text_block_paragraph_gap: 15px;
-}
-/* footer */
-.cmp {
+
+	/* footer */
 	--footer_height: unset;
 	--footer_padding: 15px var(--base_padding);
 	--footer_button_gap: 15px;
 	--footer_button_align: space-between;
 	--footer_button_flex: 1;
 	--footer_shadow: 0px -1px 9px #01010136;
-}
-/* button */
-.cmp {
+
+	/* button */
 	--button_height: unset;
 	--button_width: unset;
 	--button_border_radius: 20px;
 	--button_outline: 1px solid var(--accent_color);
 	--button_outline_offcet: 0;
 	--button_padding: 10px 15px;
+
 	/* primary button */
 	--button_primary_border: 0;
 	--button_primary_background_color: var(--main_color);
@@ -81,6 +77,7 @@
 	--button_primary_background_color_hover: var(--accent_color);
 	--button_primary_color_hover: var(--secondary_color);
 	--button_primary_border_hover: 0;
+
 	/* secondary button */
 	--button_secondary_border: 1px solid var(--secondary_color);
 	--button_secondary_background_color: var(--secondary_color);
@@ -88,14 +85,16 @@
 	--button_secondary_background_color_hover: var(--secondary_color);
 	--button_secondary_color_hover: var(--accent_color);
 	--button_secondary_border_hover: 1px solid var(--accent_color);
+
 	/* close button */
 	--close_sign_size: 15px;
 	--close_button_hover: var(--links_hover_color);
 	--close_button_padding: 5px 0;
-}
-/* links */
-.cmp {
+
+	/* links */
 	--links_color: inherit;
 	--links_text_decoration: underline;
 	--links_hover_color: var(--accent_color);
+
 }
+
