@@ -1,0 +1,13 @@
+.footer {
+	width: 100%;
+    height: var(--footer_height);
+	padding: var(--footer_padding);
+	display: flex;
+	justify-content: var(--footer_button_flex);
+	align-items: center;
+	gap: var(--footer_button_gap);
+    box-shadow: var(--footer_shadow);
+    & button{
+        flex: var(--footer_button_flex)
+    }
+}

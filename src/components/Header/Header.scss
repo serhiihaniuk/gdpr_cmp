@@ -1,0 +1,24 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--header_padding);
+    box-shadow: var(--header_shadow);
+    gap: 10px;
+    height: var(--header_height);
+    &__logo {
+        flex: 1 0 100px;
+        display: flex;
+        justify-content: start;
+        & .logo {
+            width: 100px;
+            height: 50px;
+            background-image: var(--logo-image-url);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+    }
+   
+}
