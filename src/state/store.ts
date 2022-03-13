@@ -1,4 +1,4 @@
-import { Actions, Routes } from './service';
+import {Actions, Routes} from './service';
 /* ## Main apps store */
 
 interface IAppState {
@@ -14,11 +14,11 @@ const appState: IAppState = {
 
 export const appStateReducer = (
   state: IAppState = appState,
-  { type, payload }: IReduxAction
+  {type, payload}: IReduxAction
 ): IAppState => {
   switch (type) {
   case Actions.Redirect:
-    return { route: payload };
+    return {route: payload};
   default:
     return state;
   }

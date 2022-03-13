@@ -1,4 +1,4 @@
-import { useTypedSelector } from '../../hooks/useTypedSelector';
+import {useTypedSelector} from '../../hooks/useTypedSelector';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import Router from '../Router/Router';

@@ -13,13 +13,10 @@ const fcpState: IFcpState = {
   3: false,
 };
 
-export const fcpReducer = (
-  state: IFcpState = fcpState,
-  { type, payload }: IFcpAction
-): IFcpState => {
+export const fcpReducer = (state: IFcpState = fcpState, {type, payload}: IFcpAction): IFcpState => {
   switch (type) {
   case 'CHANGE_FCP_STATE':
-    const newFCPState = { ...state, ...payload };
+    const newFCPState = {...state, ...payload};
     console.log(
       `%c newFPCState ${Object.entries(newFCPState)}`,
       'color: #516BEB; font-size: 14px;'
@@ -30,7 +27,7 @@ export const fcpReducer = (
       `%c ACCEPTED FPC STATE WAS RECORDED TO COOKIES`,
       'color: #516BEB; font-size: 14px; background: #E4CDA7;'
     );
-    return { 1: true, 2: true, 3: true };
+    return {1: true, 2: true, 3: true};
   case 'SAVE_CHANGES':
     console.log(
       `%c CURRENT FPC STATE WAS RECORDED TO COOKIES`,

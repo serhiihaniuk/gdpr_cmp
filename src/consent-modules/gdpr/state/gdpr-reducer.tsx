@@ -15,11 +15,11 @@ const fcpState: IGdprState = {
 
 export const gdprReducer = (
   state: IGdprState = fcpState,
-  { type, payload }: IGdprAction
+  {type, payload}: IGdprAction
 ): IGdprState => {
   switch (type) {
   case 'CHANGE_GDPR_STATE':
-    const newState = { ...state, ...payload };
+    const newState = {...state, ...payload};
     console.log(
       `%c newGDPRState ${Object.entries(newState)}`,
       'color: #219F94; font-size: 14px;'
@@ -30,7 +30,7 @@ export const gdprReducer = (
       `%c ACCEPTED GDPR STATE WAS RECORDED TO COOKIES`,
       'color: #219F94; font-size: 14px; background: #F7ECDE;'
     );
-    return { 1: true, 2: true, 3: true };
+    return {1: true, 2: true, 3: true};
   case 'SAVE_CHANGES':
     console.log(
       `%c CURRENT GDPR STATE WAS RECORDED TO COOKIES`,

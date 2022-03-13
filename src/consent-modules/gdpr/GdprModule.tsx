@@ -1,5 +1,5 @@
-import { useDispatch } from 'react-redux';
-import { useTypedSelector } from '../../hooks/useTypedSelector';
+import {useDispatch} from 'react-redux';
+import {useTypedSelector} from '../../hooks/useTypedSelector';
 const GdprModule = () => {
   const state = useTypedSelector((state) => state.gdpr);
   const dispatch = useDispatch();
@@ -15,7 +15,7 @@ const GdprModule = () => {
             onChange={() => {
               dispatch({
                 type: 'CHANGE_GDPR_STATE',
-                payload: { 1: !state[1] },
+                payload: {1: !state[1]},
               });
             }}
           />
@@ -28,7 +28,7 @@ const GdprModule = () => {
             onChange={() => {
               dispatch({
                 type: 'CHANGE_GDPR_STATE',
-                payload: { 2: !state[2] },
+                payload: {2: !state[2]},
               });
             }}
           />{' '}
@@ -41,7 +41,7 @@ const GdprModule = () => {
             onChange={() => {
               dispatch({
                 type: 'CHANGE_GDPR_STATE',
-                payload: { 3: !state[3] },
+                payload: {3: !state[3]},
               });
             }}
           />{' '}

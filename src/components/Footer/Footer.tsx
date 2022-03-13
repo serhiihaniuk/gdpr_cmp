@@ -1,6 +1,6 @@
-import { useDispatch } from 'react-redux';
-import { useTypedSelector } from '../../hooks/useTypedSelector';
-import { redirectAction, Routes } from '../../state/service';
+import {useDispatch} from 'react-redux';
+import {useTypedSelector} from '../../hooks/useTypedSelector';
+import {redirectAction, Routes} from '../../state/service';
 import './Footer.scss';
 
 const Footer = () => {
@@ -21,7 +21,7 @@ const Footer = () => {
           <button
             className="button button--primary"
             onClick={() => {
-              dispatch({ type: 'ACCEPT_ALL' });
+              dispatch({type: 'ACCEPT_ALL'});
             }}
           >
             Akzeptieren und schliessen
@@ -41,7 +41,7 @@ const Footer = () => {
           <button
             className="button button--primary"
             onClick={() => {
-              dispatch({ type: 'SAVE_CHANGES' });
+              dispatch({type: 'SAVE_CHANGES'});
             }}
           >
             Save

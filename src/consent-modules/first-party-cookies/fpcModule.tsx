@@ -1,5 +1,5 @@
-import { useDispatch } from 'react-redux';
-import { useTypedSelector } from '../../hooks/useTypedSelector';
+import {useDispatch} from 'react-redux';
+import {useTypedSelector} from '../../hooks/useTypedSelector';
 
 const FpcModule = () => {
   const state = useTypedSelector((state) => state.fpc);
@@ -14,7 +14,7 @@ const FpcModule = () => {
             onChange={() => {
               dispatch({
                 type: 'CHANGE_FCP_STATE',
-                payload: { 1: !state[1] },
+                payload: {1: !state[1]},
               });
             }}
           />{' '}
@@ -27,7 +27,7 @@ const FpcModule = () => {
             onChange={() => {
               dispatch({
                 type: 'CHANGE_FCP_STATE',
-                payload: { 2: !state[2] },
+                payload: {2: !state[2]},
               });
             }}
           />{' '}
@@ -40,7 +40,7 @@ const FpcModule = () => {
             onChange={() => {
               dispatch({
                 type: 'CHANGE_FCP_STATE',
-                payload: { 3: !state[3] },
+                payload: {3: !state[3]},
               });
             }}
           />{' '}
