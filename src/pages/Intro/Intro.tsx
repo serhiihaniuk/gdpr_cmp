@@ -3,30 +3,32 @@ import './Intro.scss';
 const Intro = () => {
   return (
     <div className="intro">
-      <h2 className="intro_title title title--main">Wir verwenden Cookies</h2>
+      <h2 className="intro_title title title--main">Szanowna Użytkowniczko, Szanowny Użytkowniku
+      </h2>
       <div className="text" tabIndex={0}>
         <p className="text__paragraph">
-          Wenn Sie unsere{' '}
-          <a href="#" className="link">
-            {' '}
-            Webseiten und Applikationen
-          </a>{' '}
-          benutzen, werden durch Cookies und verschiedene weitere Technologien von uns und Dritten
-          Daten über Sie gesammelt.
+                    Zanim klikniesz którykolwiek przycisk prosimy o przeczytanie do końca tej informacji – dotyczy ona
+                    Twoich danych osobowych.
+
         </p>
         <p className="text__paragraph">
-          Mehr dazu finden Sie unter Einstellungen. Wenn Sie auf _Akzeptieren_ klicken oder dieses
-          Fenster schliessen, stimmen Sie den genannten Datenbearbeitungen durch uns und Dritte zu.
-          Klicken Sie auf Einstellungen finden Sie mehr Informationen zu den Datenbearbeitungen und
-          zu unseren Partnern bzw. IAB-Partnern und können dort auch jederzeit Ihre Präferenzen
-          ändern.`
+
+                    Klikając „Przejdź do serwisu” udzielasz zgody na przetwarzanie Twoich danych osobowych dotyczących
+                    Twojej aktywności w Internecie (np. identyfikatory urządzenia, adres IP) przez nas - czyli Ringier
+                    Axel Springer Polska sp. z o.o. (RASP), Zaufanych Partnerów IAB i innych Zaufanych Partnerów w
+                    celach marketingowych (w tym automatycznej personalizacji reklam i dokonywania pomiarów), w celu
+                    dostosowania dostarczanych treści oraz w pozostałych celach podanych poniżej. Szczegółowy opis celów
+                    i zakresu przetwarzanych danych znajdziesz tutaj - obejmują one (klasyfikacja wg IAB Europe) m.in.:
+                    wybór podstawowych reklam; tworzenie profilu spersonalizowanych reklam; wybór spersonalizowanych
+                    reklam; tworzenia profilu spersonalizowanych treści; wybór spersonalizowanych treści; pomiar
+                    wydajności reklam; pomiar wydajności treści; stosowanie badań rynkowych w celu generowania opinii
+                    odbiorców; opracowywanie i ulepszanie produktów oraz funkcje specjalne takie jak: użycie dokładnych
+                    danych geolokalizacyjnych i aktywne skanowanie charakterystyki urządzenia do celów identyfikacji.
+                    Zgoda jest dobrowolna. Możesz jej odmówić lub ograniczyć jej zakres klikając w „Ustawienia
+                    zaawansowane”.
+
         </p>
-        <p className="text__paragraph">
-          Die meisten genannten Datenbearbeitungen werden auf der Grundlage von berechtigtem
-          Interesse vorgenommen, andere wiederum dürfen nur mit Ihrer Einwilligung erfolgen. Sie
-          können der Bearbeitung basierend auf berechtigtem Interesse jederzeit widersprechen sowie
-          auch Ihre Einwilligung jederzeit widerrufen.
-        </p>
+
       </div>
     </div>
   );

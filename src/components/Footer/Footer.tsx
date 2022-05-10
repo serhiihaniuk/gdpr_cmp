@@ -16,7 +16,7 @@ const Footer = () => {
               dispatch(redirectAction(Routes.Details));
             }}
           >
-            Einstellungen
+              Ustawienia zaawansowane
           </button>
           <button
             className="button button--primary"
@@ -24,7 +24,7 @@ const Footer = () => {
               dispatch({type: 'ACCEPT_ALL'});
             }}
           >
-            Akzeptieren und schliessen
+              Przejdź do serwisu
           </button>
         </>
       )}
@@ -36,7 +36,7 @@ const Footer = () => {
               dispatch(redirectAction(Routes.Intro));
             }}
           >
-            Zurück
+            Wstecz
           </button>
           <button
             className="button button--primary"
@@ -44,7 +44,7 @@ const Footer = () => {
               dispatch({type: 'SAVE_CHANGES'});
             }}
           >
-            Save
+            Zapisz i zamknij
           </button>
         </>
       )}

@@ -9,19 +9,72 @@
 }
 /* ## Settings to configure applications view */
 /* Main cmp settings */
-.cmp {
-  /* base cmp settings */
-  --base_width: 600px;
-  --base_height: 500px;
-  --base_padding: 25px;
-  --main_color: #9ca518;
+.light {
+  --main_color: #13fe4a;
   --secondary_color: #f8f8f8;
-  --accent_color: #2a72cf;
+  --accent_color: #fe131b;
+
   --main_font_color: #000;
   --secondary_font_color: #666;
-  --main_font_size: 12px;
+  --background_color: #fff;
+
+  --focus_color: #134afe;
+}
+
+//button colors
+.light {
+  --primary_button_background_color: #fed413;
+  --primary_button_background_color_hover: #f8c40f;
+  --primary_button_border_color: #fed413;
+  --primary_button_border_color_hover: #000;
+  --primary_button_font_color: #000;
+  --primary_button_font_color_hover: #000;
+
+  --secondary_button_background_color: #f8f8f8;
+  --secondary_button_background_color_hover: #f8f8f8;
+  --secondary_button_border_color: #f8f8f8;
+  --secondary_button_border_color_hover: #000;
+  --secondary_button_font_color: #666;
+  --secondary_button_font_color_hover: #666;
+
+}
+
+.dark {
+  --main_color: #13fe4a;
+  --secondary_color: #f8f8f8;
+  --accent_color: #F27021;
+  --main_font_color: #ffffff;
+  --secondary_font_color: #666;
+  --background_color: #333333;
+
+  --focus_color: #13fe4a;
+}
+
+//button colors
+.dark {
+  --primary_button_background_color: #572000;
+  --primary_button_background_color_hover: #572000;
+  --primary_button_border_color: var(--accent_color);
+  --primary_button_border_color_hover: var(--accent_color);;
+  --primary_button_font_color: var(--main_font_color);
+  --primary_button_font_color_hover: var(--accent_color);;
+
+  --secondary_button_background_color: var(--background_color);
+  --secondary_button_background_color_hover: var(--background_color);
+  --secondary_button_border_color: var(--accent_color);
+  --secondary_button_border_color_hover: var(--accent_color);
+  --secondary_button_font_color: var(--main_font_color);
+  --secondary_button_font_color_hover: var(--accent_color);
+}
+
+.cmp {
+  /* base cmp settings */
+  --base_width: 45em;
+  --base_height: 35em;
+  --base_padding: 1.8em;
+  --main_font_size: 14px;
   --secondary_font_size: 12px;
-  --main_font_family: 'Roboto', arial, sans-serif;
+  --main_font_family: "Helvetica Neue",Arial,sans-serif;
   --secondary_font_family: 'Roboto', arial, sans-serif;
   --main_font_weight: 400;
   --bold_font_weight: 700;
@@ -32,15 +85,15 @@
 
   /* header */
   --header_height: 65px;
-  --header_padding: 15px var(--base_padding);
+  --header_padding: 1.2em var(--base_padding);
   --header_shadow: 0px 3px 5px #01010136;
-  --logo-image-url: url("data:image/svg+xml;utf8,<svg width='94' height='36' viewBox='0 0 94 36' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M18.2077 35.9942H3.66379C1.64076 35.9942 0.000488281 34.4129 0.000488281 32.3952V10.6373C0.000488281 8.56511 1.64076 6.98361 3.66379 6.98361H18.2077C20.2306 6.98361 21.8162 8.56511 21.8162 10.6373V16.5812L14.8724 15.7085V12.5892H6.9451V30.3697H14.8724V27.0758L21.8162 26.2036V32.3948C21.8162 34.4123 20.2306 35.9936 18.2075 35.9936' fill='rgb(219, 8, 18)'/><path d='M42.2114 35.9942H27.6675C25.6444 35.9942 24.0042 34.4129 24.0042 32.3952V21.7877C24.0042 19.8244 25.6991 18.4066 27.6675 18.4066H38.9841V12.6004H30.8368V15.7095L24.0024 16.5817V10.6381C24.0024 8.56587 25.6427 6.98438 27.6657 6.98438H42.2097C44.2325 6.98438 45.8182 8.56587 45.8182 10.4456V32.2034C45.8182 34.4137 44.2327 35.995 42.2097 35.995L42.2114 35.9942ZM38.9838 24.0245H30.8365V30.3794H38.9838V24.0245Z' fill='rgb(219, 8, 18)'/><path d='M66.2173 35.9942H51.6733C49.6505 35.9942 48.01 34.4129 48.01 32.3952V26.204L54.9539 27.0764V30.378H62.8812V24.0232H51.6726C49.6497 24.0232 48.0093 22.4419 48.0093 20.4241V10.6379C48.0093 8.56569 49.6495 6.98419 51.6726 6.98419H66.2165C68.2395 6.98419 69.8254 8.56569 69.8254 10.6379V16.5818L62.8814 15.7095V12.6004H54.9541V18.395H66.2167C68.2397 18.395 69.8254 19.9765 69.8254 22.0486V32.3946C69.8254 34.4123 68.2397 35.9936 66.2167 35.9936' fill='rgb(219, 8, 18)'/><path d='M86.8336 35.9942V12.5884H79.015V35.9942H72.0161V0H79.015V6.98246H90.1687C92.1369 6.98246 93.832 8.34545 93.832 10.3089V35.9942H86.8332' fill='rgb(219, 8, 18)'/></svg>");
+  --logo-image-url: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0id2luZG93cy0xMjUyIj8+PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhcGFfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI5MHB4IiBoZWlnaHQ9IjMwcHgiIHZpZXdCb3g9IjAgMCA3NyAyNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTUwLjgwMSA1NTAuODAxOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHNjcmlwdCB4bWxucz0iIi8+PGc+PHBhdGggZD0iTTUwLjMxNSw4OS4zMzJhNi4zNDUsNi4zNDUsMCwxLDEsNi40LTYuMzQ0LDYuMjkxLDYuMjkxLDAsMCwxLTYuNCw2LjM0NG0wLTkuNmEzLjI1OCwzLjI1OCwwLDEsMCwzLjIyNSwzLjI1OCwzLjEyNCwzLjEyNCwwLDAsMC0zLjIyNS0zLjI1OE02Ni4yMTcsODlWODIuMDA5YTIuMTg3LDIuMTg3LDAsMCwwLTIuMzM3LTIuNDIyLDIuODkyLDIuODkyLDAsMCwwLTIuNiwxLjY2M1Y4OUg1OC4xMDVWNzdoMi43NzdWNzguMjNhNS4wMDksNS4wMDksMCwwLDEsMy45MzQtMS41ODYsNC40NjgsNC40NjgsMCwwLDEsMy4yNSwxLjI5Myw1LjE1NSw1LjE1NSwwLDAsMSwxLjMyNSwzLjY5MVY4OUg2Ni4yMTdabTIzLjYxMSwwLjIxYTQuMjc3LDQuMjc3LDAsMCwxLTMuMTM5LTEuMDMsNC4wNzcsNC4wNzcsMCwwLDEtMS0zLjAyMlY3OS45OTRIODMuN1Y3N2gxLjk4NFY3NC4ybDMuMTc0LS43NTFWNzdIOTJ2M0g4OC44NnY1LjJjMCwwLjQ3LjI3MiwxLjA2OSwxLjU2NiwxLjA2OSwwLjU2OCwwLDEuNTQyLS4xMTksMS41NDItMC4xMTl2Mi44MTZhMTAuODYyLDEwLjg2MiwwLDAsMS0yLjE0LjI0N003Ny40LDg5LjMzMmMtMy44OTUsMC02LjYxNS0yLjYwOS02LjYxNS02LjM0NWE2LjI0NCw2LjI0NCwwLDEsMSwxMi40ODYsMCw3LjA0OCw3LjA0OCwwLDAsMS0uMTIxLDEuMjc0bC0wLjAwNi4wMzFINzQuMTEyYTMuMTE1LDMuMTE1LDAsMCwwLDMuMzMzLDIuMTY4LDMuMzUxLDMuMzUxLDAsMCwwLDIuNTI3LTEuMDIzbDIuNiwxLjQ0MWE2LjExOSw2LjExOSwwLDAsMS01LjE4LDIuNDUzbTIuNjg3LTcuNTA2YTIuODY0LDIuODY0LDAsMCwwLTIuOTI3LTIuMzM0LDIuOTYsMi45NiwwLDAsMC0zLjA5NSwyLjMzNGg2LjAyMloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNSAtNzEpIi8+PHBhdGggZmlsbD0iI2ZmZDIwMCIgZD0iTTM5LjExNyw4M0ExMi4wNTksMTIuMDU5LDAsMSwxLDI3LjA1OCw3MSwxMi4wMjksMTIuMDI5LDAsMCwxLDM5LjExNyw4MyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE1IC03MSkiLz48L2c+PC9zdmc+");
 
   /* titles */
   --title_font_family: 'Times New Roman', serif;
-  --main_title_font_size: 25px;
-  --primary_title_font_size: 25px;
-  --secondary_title_font_size: 16px;
+  --main_title_font_size: 1.6em;
+  --primary_title_font_size: 2em;
+  --secondary_title_font_size: 1.5em;
   --main_title_margin: 10px 0;
   --primary_title_margin: 10px 0;
   --secondary_title_margin: 10px 0;
@@ -51,7 +104,7 @@
   --text_block_font_family: var(--main_font_family);
   --text_block_font_weight: var(--main_font_weight);
   --text_block_font_color: var(--main_font_color);
-  --text_block_line_height: 1.5;
+  --text_block_line_height: 1.1em;
   --text_block_paragraph_gap: 15px;
 
   /* footer */
@@ -66,25 +119,26 @@
   --button_height: unset;
   --button_width: unset;
   --button_border_radius: 5px;
-  --button_outline: 1px solid var(--accent_color);
-  --button_outline_offcet: 0;
-  --button_padding: 10px 15px;
+  --button_outline: 2px solid var(--focus_color);
+  --button_outline_offcet: 1px;
+  --button_padding: .5em 2em;
+  --button_font_size: 1.1em;
 
   /* primary button */
-  --button_primary_border: 0;
-  --button_primary_background_color: var(--main_color);
-  --button_primary_color: var(--secondary_color);
-  --button_primary_background_color_hover: var(--accent_color);
-  --button_primary_color_hover: var(--secondary_color);
-  --button_primary_border_hover: 0;
+  --button_primary_border: 2px solid var(--primary_button_border_color);
+  --button_primary_background_color: var(--primary_button_background_color);
+  --button_primary_color: var(--primary_button_font_color);
+  --button_primary_background_color_hover: var(--primary_button_background_color_hover);
+  --button_primary_color_hover: var(--primary_button_font_color_hover);
+  --button_primary_border_hover: 2px solid var(--primary_button_border_color_hover);
 
   /* secondary button */
-  --button_secondary_border: 2px solid var(--secondary_color);
-  --button_secondary_background_color: var(--secondary_color);
-  --button_secondary_color: var(--main_color);
-  --button_secondary_background_color_hover: var(--secondary_color);
-  --button_secondary_color_hover: var(--accent_color);
-  --button_secondary_border_hover: 1px solid var(--accent_color);
+  --button_secondary_border: 2px solid var(--secondary_button_border_color);
+  --button_secondary_background_color: var(--secondary_button_background_color);
+  --button_secondary_color: var(--secondary_button_font_color);
+  --button_secondary_background_color_hover: var(--secondary_button_background_color_hover);
+  --button_secondary_color_hover: var(--secondary_button_font_color_hover);
+  --button_secondary_border_hover: 2px solid var(--secondary_button_border_color_hover);
 
   /* close button */
   --close_sign_size: 15px;

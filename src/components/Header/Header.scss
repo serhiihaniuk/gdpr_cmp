@@ -1,12 +1,29 @@
 .header {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   padding: var(--header_padding);
   box-shadow: var(--header_shadow);
-  gap: 10px;
+  gap: 5px;
   height: var(--header_height);
+  color: var(--main_font_color);
+  .settings {
+    color: inherit;
+    font-size: 1em;
+    gap: 5px;
+    justify-content: flex-end;
+    padding: 0;
+    &:hover, &:focus {
+      svg {
+        transform: rotate(30deg);
+      }
+    }
+    svg {
+      fill: var(--main_font_color);
+      transition: transform 0.3s;
+    }
+  }
   &__logo {
     flex: 1 0 100px;
     display: flex;
