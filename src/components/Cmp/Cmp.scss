@@ -10,14 +10,15 @@
 
   &__popup {
     width: 100%;
-    max-width: var(--base_width);
-    max-height: var(--base_height);
+    max-width: clamp(350px, var(--base_width), 85%);
+    max-height: clamp(350px, var(--base_height), 85%);
     border-radius: var(--popup_border_radius);
-    background-color: #fff;
+    background-color: var(--background_color);
     display: flex;
     align-items: center;
     flex-direction: column;
     overflow: hidden;
+
   }
   &__main {
     width: 100%;

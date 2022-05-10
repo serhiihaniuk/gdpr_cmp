@@ -1,0 +1,20 @@
+.accessibility-dialog {
+  width: 100vw;
+  height: 50px;
+  background-color: var(--background_color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+
+  button {
+    font-size: 16px;
+    gap: 5px;
+    padding: 5px 3px;
+  }
+}

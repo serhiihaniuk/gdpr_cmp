@@ -36,11 +36,16 @@
 }
 
 .button {
+  box-sizing: border-box;
   height: var(--button_height);
   width: var(--button_width);
   border-radius: var(--button_border_radius);
   padding: var(--button_padding);
   align-self: stretch;
+  font-size: var(--button_font_size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   &:focus-visible {
     outline: var(--button_outline);
     outline-offset: var(--button_outline_offcet);
@@ -52,6 +57,8 @@
     border: var(--button_primary_border);
     background-color: var(--button_primary_background_color);
     color: var(--button_primary_color);
+    font-weight: bold;
+
     &:hover {
       background-color: var(--button_primary_background_color_hover);
       color: var(--button_primary_color_hover);
@@ -74,6 +81,7 @@
     align-items: center;
     padding: var(--close_button_padding);
     text-decoration: underline;
+    color: var(--main_text_color);
     &:hover {
       color: var(--close_button_hover);
     }
@@ -82,6 +90,9 @@
     content: '✕';
     font-size: var(--close_sign_size);
     margin: 0 0 0 5px;
+  }
+  &--disabled {
+    opacity: 0.5;
   }
 }
 
@@ -92,4 +103,9 @@
     color: var(--links_hover_color);
     text-decoration: var(--links_text_decoration_hover);
   }
+}
+
+input[type="checkbox"] {
+  width: 1.2em;
+  height: 1.2em;
 }
