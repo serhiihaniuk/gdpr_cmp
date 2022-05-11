@@ -161,6 +161,6 @@
   --links_hover_color: var(--accent_color);
 }
 
-*:focus-visible {
+.cmp *:focus-visible {
   outline: var(--outline);
 }
