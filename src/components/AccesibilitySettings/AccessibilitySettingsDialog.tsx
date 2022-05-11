@@ -55,9 +55,20 @@ const AccessibilitySettingsDialog: FunctionComponent<{
   if (!isVisible) return null;
 
   return (
-    <FocusTrap cssSelector={'#accessibility-dialog'}>
-      <div id={'accessibility-dialog'} className="accessibility-dialog" aria-modal="true">
-        <button className="button button--secondary" onClick={toggleTheme}>
+    <FocusTrap cssSelector={'#accessibility-dialog'} initialFocus={".accessibility-dialog"}>
+      <div
+        aria-label="ustawienia dostępności"
+        role="dialog"
+        id={'accessibility-dialog'}
+        className="accessibility-dialog"
+        aria-modal="true"
+        tabIndex={0}
+      >
+        <button
+          aria-label="zmień scheme kolorystyczną"
+          className="button button--secondary"
+          onClick={toggleTheme}
+        >
           <Icons.Color />
         </button>
 

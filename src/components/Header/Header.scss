@@ -8,26 +8,32 @@
   gap: 5px;
   height: var(--header_height);
   color: var(--main_font_color);
+  position: relative;
+
   .settings {
     color: inherit;
     font-size: 1em;
     gap: 5px;
     justify-content: flex-end;
     padding: 0;
+
     &:hover, &:focus {
       svg {
         transform: rotate(30deg);
       }
     }
+
     svg {
       fill: var(--main_font_color);
       transition: transform 0.3s;
     }
   }
+
   &__logo {
     flex: 1 0 100px;
     display: flex;
     justify-content: start;
+
     & .logo {
       width: 100px;
       height: 50px;
@@ -36,5 +42,32 @@
       background-size: contain;
       background-position: center;
     }
+  }
+}
+
+.skip-btn {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: #87a0fd;
+  color: #fff;
+  border-radius: 0px;
+  padding: 5px 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+
+}
+
+.visible-on-focus {
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+
+  &:focus {
+    width: auto;
+    height: auto;
+    clip: auto;
   }
 }

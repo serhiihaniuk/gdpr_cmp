@@ -1,12 +1,14 @@
 .cmp {
   height: 100%;
   width: 100%;
-  background-color: #d9f1f3;
   font-family: var(--main_font_family);
   font-weight: var(--main_font_weight);
   color: var(--main_font_color);
   font-size: var(--main_font_size);
+  position: fixed;
+  inset: 0;
 }
+
 /* ## Settings to configure applications view */
 /* Main cmp settings */
 .light {
@@ -19,6 +21,9 @@
   --background_color: #fff;
 
   --focus_color: #134afe;
+
+  --link_color: #134afe;
+  --link_color_visited: #8c13fe;
 }
 
 //button colors
@@ -48,6 +53,9 @@
   --background_color: #333333;
 
   --focus_color: #13fe4a;
+
+  --link_color: #cdd7f6;
+  --link_color_visited: #f6cdf4;
 }
 
 //button colors
@@ -74,20 +82,21 @@
   --base_padding: 1.8em;
   --main_font_size: 14px;
   --secondary_font_size: 12px;
-  --main_font_family: "Helvetica Neue",Arial,sans-serif;
+  --main_font_family: "Helvetica Neue", Arial, sans-serif;
   --secondary_font_family: 'Roboto', arial, sans-serif;
   --main_font_weight: 400;
   --bold_font_weight: 700;
   --popup_border_radius: 4px;
-
+  --outline: 2px solid var(--focus_color);
   /* main section */
   --main_content_padding: 10px var(--base_padding);
 
   /* header */
   --header_height: 65px;
   --header_padding: 1.2em var(--base_padding);
-  --header_shadow: 0px 3px 5px #01010136;
+  --header_shadow: none;
   --logo-image-url: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0id2luZG93cy0xMjUyIj8+PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhcGFfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI5MHB4IiBoZWlnaHQ9IjMwcHgiIHZpZXdCb3g9IjAgMCA3NyAyNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTUwLjgwMSA1NTAuODAxOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHNjcmlwdCB4bWxucz0iIi8+PGc+PHBhdGggZD0iTTUwLjMxNSw4OS4zMzJhNi4zNDUsNi4zNDUsMCwxLDEsNi40LTYuMzQ0LDYuMjkxLDYuMjkxLDAsMCwxLTYuNCw2LjM0NG0wLTkuNmEzLjI1OCwzLjI1OCwwLDEsMCwzLjIyNSwzLjI1OCwzLjEyNCwzLjEyNCwwLDAsMC0zLjIyNS0zLjI1OE02Ni4yMTcsODlWODIuMDA5YTIuMTg3LDIuMTg3LDAsMCwwLTIuMzM3LTIuNDIyLDIuODkyLDIuODkyLDAsMCwwLTIuNiwxLjY2M1Y4OUg1OC4xMDVWNzdoMi43NzdWNzguMjNhNS4wMDksNS4wMDksMCwwLDEsMy45MzQtMS41ODYsNC40NjgsNC40NjgsMCwwLDEsMy4yNSwxLjI5Myw1LjE1NSw1LjE1NSwwLDAsMSwxLjMyNSwzLjY5MVY4OUg2Ni4yMTdabTIzLjYxMSwwLjIxYTQuMjc3LDQuMjc3LDAsMCwxLTMuMTM5LTEuMDMsNC4wNzcsNC4wNzcsMCwwLDEtMS0zLjAyMlY3OS45OTRIODMuN1Y3N2gxLjk4NFY3NC4ybDMuMTc0LS43NTFWNzdIOTJ2M0g4OC44NnY1LjJjMCwwLjQ3LjI3MiwxLjA2OSwxLjU2NiwxLjA2OSwwLjU2OCwwLDEuNTQyLS4xMTksMS41NDItMC4xMTl2Mi44MTZhMTAuODYyLDEwLjg2MiwwLDAsMS0yLjE0LjI0N003Ny40LDg5LjMzMmMtMy44OTUsMC02LjYxNS0yLjYwOS02LjYxNS02LjM0NWE2LjI0NCw2LjI0NCwwLDEsMSwxMi40ODYsMCw3LjA0OCw3LjA0OCwwLDAsMS0uMTIxLDEuMjc0bC0wLjAwNi4wMzFINzQuMTEyYTMuMTE1LDMuMTE1LDAsMCwwLDMuMzMzLDIuMTY4LDMuMzUxLDMuMzUxLDAsMCwwLDIuNTI3LTEuMDIzbDIuNiwxLjQ0MWE2LjExOSw2LjExOSwwLDAsMS01LjE4LDIuNDUzbTIuNjg3LTcuNTA2YTIuODY0LDIuODY0LDAsMCwwLTIuOTI3LTIuMzM0LDIuOTYsMi45NiwwLDAsMC0zLjA5NSwyLjMzNGg2LjAyMloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNSAtNzEpIi8+PHBhdGggZmlsbD0iI2ZmZDIwMCIgZD0iTTM5LjExNyw4M0ExMi4wNTksMTIuMDU5LDAsMSwxLDI3LjA1OCw3MSwxMi4wMjksMTIuMDI5LDAsMCwxLDM5LjExNyw4MyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE1IC03MSkiLz48L2c+PC9zdmc+");
+
 
   /* titles */
   --title_font_family: 'Times New Roman', serif;
@@ -113,13 +122,13 @@
   --footer_button_gap: 15px;
   --footer_button_align: space-between;
   --footer_button_flex: 1;
-  --footer_shadow: 0px -1px 9px #01010136;
+  --footer_shadow: none;
 
   /* button */
   --button_height: unset;
   --button_width: unset;
   --button_border_radius: 5px;
-  --button_outline: 2px solid var(--focus_color);
+  --button_outline: var(--outline);
   --button_outline_offcet: 1px;
   --button_padding: .5em 2em;
   --button_font_size: 1.1em;
@@ -146,7 +155,12 @@
   --close_button_padding: 5px 0;
 
   /* links */
-  --links_color: inherit;
+  --links_color: var(--link_color);
+  --links_color_visited: var(--link_color_visited);
   --links_text_decoration: underline;
   --links_hover_color: var(--accent_color);
+}
+
+*:focus-visible {
+  outline: var(--outline);
 }

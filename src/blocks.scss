@@ -59,7 +59,7 @@
     color: var(--button_primary_color);
     font-weight: bold;
 
-    &:hover {
+    &:hover.button:not([disabled]) {
       background-color: var(--button_primary_background_color_hover);
       color: var(--button_primary_color_hover);
       border: var(--button_primary_border_hover);
@@ -91,8 +91,10 @@
     font-size: var(--close_sign_size);
     margin: 0 0 0 5px;
   }
-  &--disabled {
+  &--disabled, &:disabled {
     opacity: 0.5;
+    outline: none;
+    border: 0;
   }
 }
 
@@ -103,9 +105,15 @@
     color: var(--links_hover_color);
     text-decoration: var(--links_text_decoration_hover);
   }
+  &:visited{
+    color: var(--links_color_visited);
+  }
 }
 
 input[type="checkbox"] {
   width: 1.2em;
   height: 1.2em;
 }
+
+button:not([disabled]) {}
+

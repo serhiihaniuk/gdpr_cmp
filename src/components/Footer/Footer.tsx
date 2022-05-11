@@ -5,6 +5,9 @@ import './Footer.scss';
 
 const Footer = () => {
   const route = useTypedSelector((state) => state.appState.route);
+  const tWindow = window as Window & typeof globalThis & {
+    showConsentTool: () => void;
+  }
   const dispatch = useDispatch();
   return (
     <footer className="footer">
@@ -20,8 +23,10 @@ const Footer = () => {
           </button>
           <button
             className="button button--primary"
+            id="accept-button"
             onClick={() => {
               dispatch({type: 'ACCEPT_ALL'});
+              tWindow.showConsentTool()
             }}
           >
               Przejdź do serwisu
@@ -42,6 +47,7 @@ const Footer = () => {
             className="button button--primary"
             onClick={() => {
               dispatch({type: 'SAVE_CHANGES'});
+              tWindow.showConsentTool()
             }}
           >
             Zapisz i zamknij
