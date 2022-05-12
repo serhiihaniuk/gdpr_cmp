@@ -164,12 +164,13 @@
 }
 
 .gui-switch {
-  --thumb-size: 1.5em;
+  font-size: var(--main_font_size);
+  --thumb-size: var(--main_font_size);;
   --thumb: hsl(0 0% 100%);
   --thumb-highlight: hsl(0 0% 0% / 25%);
 
   --track-size: calc(var(--thumb-size) * 2);
-  --track-padding: 0.2em;
+  --track-padding: 3px;
   --track-inactive: hsl(80 0% 80%);
   --track-active: hsl(80 60% 45%);
 
