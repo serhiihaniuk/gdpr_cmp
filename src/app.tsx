@@ -4,6 +4,7 @@ import {useEffect, useState} from 'preact/compat';
 const typedWindow = window as Window & typeof globalThis & {
   showConsentTool: () => void;
 }
+
 export function App() {
   const [isVisible, setIsVisible] = useState(true);
 

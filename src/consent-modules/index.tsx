@@ -16,13 +16,12 @@ const modulesConfig = {
     reducer: fcpReducer,
   },
 };
-const ModuleWrapper = ({ConsentModule, moduleName, isEnabled}: any) => {
+const ModuleWrapper = ({ConsentModule, isEnabled}: any) => {
   if (!isEnabled) {
     return null;
   }
   return (
     <div>
-      <h2>{moduleName}</h2>
       <ConsentModule />
     </div>
   );
@@ -32,13 +31,13 @@ export default [
   <ModuleWrapper
     key={1}
     ConsentModule={FpcModule}
-    moduleName={'First Party Cookies'}
+
     isEnabled={modulesConfig.fpc.enabled}
   />,
   <ModuleWrapper
     key={2}
     ConsentModule={GdprModule}
-    moduleName={'GDPR'}
+
     isEnabled={modulesConfig.gdpr.enabled}
   />,
 ];
