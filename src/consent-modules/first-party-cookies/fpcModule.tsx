@@ -6,45 +6,58 @@ const FpcModule = () => {
   const dispatch = useDispatch();
   return (
     <div>
-      <ul>
+      <h3 id="cookies">Manage Consent Preferences</h3>
+      <ul role="group" aria-label="Zarządzaj preferencjami plików cookie">
         <li>
-          <input
-            type="checkbox"
-            checked={state[1]}
-            onChange={() => {
-              dispatch({
-                type: 'CHANGE_FCP_STATE',
-                payload: {1: !state[1]},
-              });
-            }}
-          />{' '}
-          Custom Purpose 1
+          <label className="gui-switch">
+            <input
+              type="checkbox"
+              checked={state[1]}
+              aria-checked={state[1]}
+              role="switch"
+              onChange={() => {
+                dispatch({
+                  type: 'CHANGE_FCP_STATE',
+                  payload: {1: !state[1]},
+                });
+              }}
+            />{' '}
+            Strictly Necessary Cookies
+          </label>
         </li>
         <li>
-          <input
-            type="checkbox"
-            checked={state[2]}
-            onChange={() => {
-              dispatch({
-                type: 'CHANGE_FCP_STATE',
-                payload: {2: !state[2]},
-              });
-            }}
-          />{' '}
-          Custom Purpose 2
+          <label className="gui-switch">
+            <input
+              type="checkbox"
+              checked={state[2]}
+              aria-checked={state[2]}
+              role="switch"
+              onChange={() => {
+                dispatch({
+                  type: 'CHANGE_FCP_STATE',
+                  payload: {2: !state[2]},
+                });
+              }}
+            />{' '}
+            Analytics Cookies
+          </label>
         </li>
         <li>
-          <input
-            type="checkbox"
-            checked={state[3]}
-            onChange={() => {
-              dispatch({
-                type: 'CHANGE_FCP_STATE',
-                payload: {3: !state[3]},
-              });
-            }}
-          />{' '}
-          Custom Purpose 3
+          <label className="gui-switch">
+            <input
+              type="checkbox"
+              checked={state[3]}
+              aria-checked={state[3]}
+              role="switch"
+              onChange={() => {
+                dispatch({
+                  type: 'CHANGE_FCP_STATE',
+                  payload: {3: !state[3]},
+                });
+              }}
+            />{' '}
+            Targeting Cookies
+          </label>
         </li>
       </ul>
     </div>

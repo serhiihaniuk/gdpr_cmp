@@ -41,13 +41,12 @@
   --secondary_button_border_color_hover: #000;
   --secondary_button_font_color: #666;
   --secondary_button_font_color_hover: #666;
-
 }
 
 .dark {
   --main_color: #13fe4a;
   --secondary_color: #f8f8f8;
-  --accent_color: #F27021;
+  --accent_color: #f27021;
   --main_font_color: #ffffff;
   --secondary_font_color: #666;
   --background_color: #333333;
@@ -63,9 +62,9 @@
   --primary_button_background_color: #572000;
   --primary_button_background_color_hover: #572000;
   --primary_button_border_color: var(--accent_color);
-  --primary_button_border_color_hover: var(--accent_color);;
+  --primary_button_border_color_hover: var(--accent_color);
   --primary_button_font_color: var(--main_font_color);
-  --primary_button_font_color_hover: var(--accent_color);;
+  --primary_button_font_color_hover: var(--accent_color);
 
   --secondary_button_background_color: var(--background_color);
   --secondary_button_background_color_hover: var(--background_color);
@@ -82,7 +81,7 @@
   --base_padding: 1.8em;
   --main_font_size: 14px;
   --secondary_font_size: 12px;
-  --main_font_family: "Helvetica Neue", Arial, sans-serif;
+  --main_font_family: 'Helvetica Neue', Arial, sans-serif;
   --secondary_font_family: 'Roboto', arial, sans-serif;
   --main_font_weight: 400;
   --bold_font_weight: 700;
@@ -95,8 +94,7 @@
   --header_height: 65px;
   --header_padding: 1.2em var(--base_padding);
   --header_shadow: none;
-  --logo-image-url: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0id2luZG93cy0xMjUyIj8+PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhcGFfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI5MHB4IiBoZWlnaHQ9IjMwcHgiIHZpZXdCb3g9IjAgMCA3NyAyNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTUwLjgwMSA1NTAuODAxOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHNjcmlwdCB4bWxucz0iIi8+PGc+PHBhdGggZD0iTTUwLjMxNSw4OS4zMzJhNi4zNDUsNi4zNDUsMCwxLDEsNi40LTYuMzQ0LDYuMjkxLDYuMjkxLDAsMCwxLTYuNCw2LjM0NG0wLTkuNmEzLjI1OCwzLjI1OCwwLDEsMCwzLjIyNSwzLjI1OCwzLjEyNCwzLjEyNCwwLDAsMC0zLjIyNS0zLjI1OE02Ni4yMTcsODlWODIuMDA5YTIuMTg3LDIuMTg3LDAsMCwwLTIuMzM3LTIuNDIyLDIuODkyLDIuODkyLDAsMCwwLTIuNiwxLjY2M1Y4OUg1OC4xMDVWNzdoMi43NzdWNzguMjNhNS4wMDksNS4wMDksMCwwLDEsMy45MzQtMS41ODYsNC40NjgsNC40NjgsMCwwLDEsMy4yNSwxLjI5Myw1LjE1NSw1LjE1NSwwLDAsMSwxLjMyNSwzLjY5MVY4OUg2Ni4yMTdabTIzLjYxMSwwLjIxYTQuMjc3LDQuMjc3LDAsMCwxLTMuMTM5LTEuMDMsNC4wNzcsNC4wNzcsMCwwLDEtMS0zLjAyMlY3OS45OTRIODMuN1Y3N2gxLjk4NFY3NC4ybDMuMTc0LS43NTFWNzdIOTJ2M0g4OC44NnY1LjJjMCwwLjQ3LjI3MiwxLjA2OSwxLjU2NiwxLjA2OSwwLjU2OCwwLDEuNTQyLS4xMTksMS41NDItMC4xMTl2Mi44MTZhMTAuODYyLDEwLjg2MiwwLDAsMS0yLjE0LjI0N003Ny40LDg5LjMzMmMtMy44OTUsMC02LjYxNS0yLjYwOS02LjYxNS02LjM0NWE2LjI0NCw2LjI0NCwwLDEsMSwxMi40ODYsMCw3LjA0OCw3LjA0OCwwLDAsMS0uMTIxLDEuMjc0bC0wLjAwNi4wMzFINzQuMTEyYTMuMTE1LDMuMTE1LDAsMCwwLDMuMzMzLDIuMTY4LDMuMzUxLDMuMzUxLDAsMCwwLDIuNTI3LTEuMDIzbDIuNiwxLjQ0MWE2LjExOSw2LjExOSwwLDAsMS01LjE4LDIuNDUzbTIuNjg3LTcuNTA2YTIuODY0LDIuODY0LDAsMCwwLTIuOTI3LTIuMzM0LDIuOTYsMi45NiwwLDAsMC0zLjA5NSwyLjMzNGg2LjAyMloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNSAtNzEpIi8+PHBhdGggZmlsbD0iI2ZmZDIwMCIgZD0iTTM5LjExNyw4M0ExMi4wNTksMTIuMDU5LDAsMSwxLDI3LjA1OCw3MSwxMi4wMjksMTIuMDI5LDAsMCwxLDM5LjExNyw4MyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE1IC03MSkiLz48L2c+PC9zdmc+");
-
+  --logo-image-url: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0id2luZG93cy0xMjUyIj8+PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhcGFfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI5MHB4IiBoZWlnaHQ9IjMwcHgiIHZpZXdCb3g9IjAgMCA3NyAyNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTUwLjgwMSA1NTAuODAxOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHNjcmlwdCB4bWxucz0iIi8+PGc+PHBhdGggZD0iTTUwLjMxNSw4OS4zMzJhNi4zNDUsNi4zNDUsMCwxLDEsNi40LTYuMzQ0LDYuMjkxLDYuMjkxLDAsMCwxLTYuNCw2LjM0NG0wLTkuNmEzLjI1OCwzLjI1OCwwLDEsMCwzLjIyNSwzLjI1OCwzLjEyNCwzLjEyNCwwLDAsMC0zLjIyNS0zLjI1OE02Ni4yMTcsODlWODIuMDA5YTIuMTg3LDIuMTg3LDAsMCwwLTIuMzM3LTIuNDIyLDIuODkyLDIuODkyLDAsMCwwLTIuNiwxLjY2M1Y4OUg1OC4xMDVWNzdoMi43NzdWNzguMjNhNS4wMDksNS4wMDksMCwwLDEsMy45MzQtMS41ODYsNC40NjgsNC40NjgsMCwwLDEsMy4yNSwxLjI5Myw1LjE1NSw1LjE1NSwwLDAsMSwxLjMyNSwzLjY5MVY4OUg2Ni4yMTdabTIzLjYxMSwwLjIxYTQuMjc3LDQuMjc3LDAsMCwxLTMuMTM5LTEuMDMsNC4wNzcsNC4wNzcsMCwwLDEtMS0zLjAyMlY3OS45OTRIODMuN1Y3N2gxLjk4NFY3NC4ybDMuMTc0LS43NTFWNzdIOTJ2M0g4OC44NnY1LjJjMCwwLjQ3LjI3MiwxLjA2OSwxLjU2NiwxLjA2OSwwLjU2OCwwLDEuNTQyLS4xMTksMS41NDItMC4xMTl2Mi44MTZhMTAuODYyLDEwLjg2MiwwLDAsMS0yLjE0LjI0N003Ny40LDg5LjMzMmMtMy44OTUsMC02LjYxNS0yLjYwOS02LjYxNS02LjM0NWE2LjI0NCw2LjI0NCwwLDEsMSwxMi40ODYsMCw3LjA0OCw3LjA0OCwwLDAsMS0uMTIxLDEuMjc0bC0wLjAwNi4wMzFINzQuMTEyYTMuMTE1LDMuMTE1LDAsMCwwLDMuMzMzLDIuMTY4LDMuMzUxLDMuMzUxLDAsMCwwLDIuNTI3LTEuMDIzbDIuNiwxLjQ0MWE2LjExOSw2LjExOSwwLDAsMS01LjE4LDIuNDUzbTIuNjg3LTcuNTA2YTIuODY0LDIuODY0LDAsMCwwLTIuOTI3LTIuMzM0LDIuOTYsMi45NiwwLDAsMC0zLjA5NSwyLjMzNGg2LjAyMloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNSAtNzEpIi8+PHBhdGggZmlsbD0iI2ZmZDIwMCIgZD0iTTM5LjExNyw4M0ExMi4wNTksMTIuMDU5LDAsMSwxLDI3LjA1OCw3MSwxMi4wMjksMTIuMDI5LDAsMCwxLDM5LjExNyw4MyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE1IC03MSkiLz48L2c+PC9zdmc+');
 
   /* titles */
   --title_font_family: 'Times New Roman', serif;
@@ -130,7 +128,7 @@
   --button_border_radius: 5px;
   --button_outline: var(--outline);
   --button_outline_offcet: 1px;
-  --button_padding: .5em 2em;
+  --button_padding: 0.5em 2em;
   --button_font_size: 1.1em;
 
   /* primary button */
@@ -163,4 +161,134 @@
 
 .cmp *:focus-visible {
   outline: var(--outline);
+}
+
+.gui-switch {
+  --thumb-size: 1.5em;
+  --thumb: hsl(0 0% 100%);
+  --thumb-highlight: hsl(0 0% 0% / 25%);
+
+  --track-size: calc(var(--thumb-size) * 2);
+  --track-padding: 0.2em;
+  --track-inactive: hsl(80 0% 80%);
+  --track-active: hsl(80 60% 45%);
+
+  --thumb-color: var(--thumb);
+  --thumb-color-highlight: var(--thumb-highlight);
+  --track-color-inactive: var(--track-inactive);
+  --track-color-active: var(--track-active);
+
+  --isLTR: 1;
+
+  display: flex;
+  align-items: center;
+  gap: 2ch;
+  justify-content: flex-start;
+
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+
+  &:dir(rtl) {
+    --isLTR: -1;
+  }
+
+  &.-vertical {
+    min-block-size: calc(var(--track-size) + calc(var(--track-padding) * 2));
+
+    & > input {
+      transform: rotate(calc(90deg * var(--isLTR) * -1));
+      touch-action: pan-x;
+    }
+  }
+
+  & > input {
+    --thumb-position: 0%;
+    --thumb-transition-duration: 0.25s;
+
+    padding: var(--track-padding);
+    background: var(--track-color-inactive);
+    inline-size: var(--track-size);
+    block-size: var(--thumb-size);
+    border-radius: var(--track-size);
+
+    appearance: none;
+    pointer-events: none;
+    touch-action: pan-y;
+    border: none;
+    outline-offset: 5px;
+    box-sizing: content-box;
+
+    flex-shrink: 0;
+    display: grid;
+    align-items: center;
+    grid: [track] 1fr / [track] 1fr;
+
+    transition: background-color 0.25s ease;
+
+    &::before {
+      --highlight-size: 0;
+
+      content: '';
+      cursor: pointer;
+      pointer-events: auto;
+      grid-area: track;
+      inline-size: var(--thumb-size);
+      block-size: var(--thumb-size);
+      background: var(--thumb-color);
+      box-shadow: 0 0 0 var(--highlight-size) var(--thumb-color-highlight);
+      border-radius: 50%;
+      transform: translateX(var(--thumb-position));
+      transition: transform var(--thumb-transition-duration) ease, box-shadow 0.25s ease;
+    }
+
+    &:not(:disabled):hover::before {
+      --highlight-size: 0.5rem;
+    }
+
+    &:checked {
+      background: var(--track-color-active);
+      --thumb-position: calc((var(--track-size) - 100%) * var(--isLTR));
+    }
+
+    &:indeterminate {
+      --thumb-position: calc(
+        calc(calc(var(--track-size) / 2) - calc(var(--thumb-size) / 2)) * var(--isLTR)
+      );
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+      --thumb-color: transparent;
+
+      &::before {
+        cursor: not-allowed;
+        box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5);
+
+        @media (prefers-color-scheme: dark) {
+          & {
+            box-shadow: inset 0 0 0 2px hsl(0 0% 0% / 50%);
+          }
+        }
+      }
+    }
+  }
+}
+
+.dark .gui-switch {
+  --thumb: rgb(6, 109, 20);
+  --thumb-highlight: hsl(0 0% 100% / 25%);
+  --track-inactive: rgb(170, 167, 167);
+  --track-active: rgb(204, 224, 208);
+}
+
+.dark .gui-switch {
+  &:disabled {
+    cursor: not-allowed;
+    --thumb-color: transparent;
+
+    &::before {
+      box-shadow: inset 0 0 0 2px rgba(235, 227, 227, 0.5);
+    }
+  }
 }

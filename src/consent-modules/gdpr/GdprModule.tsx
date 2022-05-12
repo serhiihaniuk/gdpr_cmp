@@ -7,10 +7,10 @@ const GdprModule = () => {
 
   return (
     <div>
-      This is regular gdpr module
-      <ul>
+      <h3 id="gdpr">GDPR Purposes</h3>
+      <ul aria-describedby="gdpr" aria-label="Cele gdpr" role="group">
         <li>
-          <label>
+          <label className="gui-switch">
             <input
               type="checkbox"
               checked={state[1]}
@@ -21,11 +21,11 @@ const GdprModule = () => {
                 });
               }}
             />
-            GDPR Purpose 1
+            Wybór podstawowych reklam
           </label>
         </li>
         <li>
-          <label>
+          <label className="gui-switch">
             <input
               type="checkbox"
               checked={state[2]}
@@ -36,11 +36,11 @@ const GdprModule = () => {
                 });
               }}
             />{' '}
-            GDPR Purpose 2
+            Tworzenie profilu spersonalizowanych reklam
           </label>
         </li>
         <li>
-          <label>
+          <label className="gui-switch">
             <input
               type="checkbox"
               checked={state[3]}
@@ -51,7 +51,7 @@ const GdprModule = () => {
                 });
               }}
             />{' '}
-            GDPR Purpose 3
+            Pomiar wydajności reklam
           </label>
         </li>
       </ul>
