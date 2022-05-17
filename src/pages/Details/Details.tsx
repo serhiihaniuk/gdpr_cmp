@@ -10,8 +10,8 @@ const Details = () => {
   }, [detailsWrapper.current]);
   return (
     <div>
-      <div ref={detailsWrapper} className="text" tabIndex={0}>
-        <h2>Consent settings</h2>
+      <div className="text" tabIndex={0}>
+        <h2 ref={detailsWrapper}>Consent settings</h2>
         {/* Renders all used modules */}
         {consentModules}
       </div>
