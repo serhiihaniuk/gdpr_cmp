@@ -14,14 +14,17 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 h2 {
   margin: 5px;
 }
+
 *,
 header {
   box-sizing: border-box;
 }
-/* reset buton styles */
+
+/* reset button styles */
 button {
   border: 0;
   background-color: transparent;
