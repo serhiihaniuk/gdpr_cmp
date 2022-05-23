@@ -1,3 +1,5 @@
+[Demo](https://serhiihaniuk.github.io/gdpr_cmp/dist/index.html)
+
 ## instalation
 
 1. npm install
